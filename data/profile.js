@@ -12,7 +12,7 @@ window.PROFILE = {
   links: [
     { label: "论文成果", href: "#publications" },
     { label: "科研项目", href: "#projects" },
-    { label: "Google Scholar", href: "https://scholar.google.com/citations?hl=en&user=SqlD6Z0AAAAJ&view_op=list_works&sortby=pubdate", external: true },
+    { label: "Google Scholar", href: "https://scholar.google.com/citations?view_op=search_authors&mauthors=Deng+Song+Nanjing+University+of+Posts+and+Telecommunications&hl=en", external: true },
     { label: "GitHub", href: "https://github.com/dsylc2006", external: true }
   ],
   news: [
