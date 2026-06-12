@@ -73,6 +73,10 @@ function renderServices() {
   });
 }
 
+function renderNews() {
+  renderCards("news-list", profile.news);
+}
+
 function renderCards(targetId, items, options = {}) {
   const list = byId(targetId);
   list.innerHTML = "";
@@ -199,6 +203,7 @@ function drawResearchCanvas() {
 }
 
 renderIntro();
+renderNews();
 renderExperience();
 renderServices();
 renderPublicationFilters();

@@ -9,6 +9,7 @@
 - `summary`：个人简介
 - `metrics`：首页统计数字
 - `experience`：工作经历
+- `news`：最新动态
 - `services`：学术服务
 - `publications`：论文列表
 - `projects`：科研项目

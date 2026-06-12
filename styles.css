@@ -88,6 +88,24 @@ a {
   padding-bottom: clamp(30px, 5vw, 60px);
 }
 
+.profile-photo-wrap {
+  width: min(210px, 44vw);
+  margin-bottom: 22px;
+  padding: 8px;
+  border: 1px solid rgba(23, 59, 104, 0.14);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 16px 34px rgba(31, 45, 70, 0.14);
+}
+
+.profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 553 / 759;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
 .eyebrow {
   margin: 0 0 10px;
   color: var(--teal);

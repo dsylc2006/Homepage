@@ -15,6 +15,14 @@ window.PROFILE = {
     { label: "Google Scholar", href: "https://scholar.google.com/citations?hl=en&user=SqlD6Z0AAAAJ&view_op=list_works&sortby=pubdate", external: true },
     { label: "GitHub", href: "https://github.com/dsylc2006", external: true }
   ],
+  news: [
+    {
+      period: "2026.06",
+      tags: ["IEEE TETCI", "Accepted"],
+      title:
+        "论文 “FedSTAFN: A Secure and Efficient Privacy-Preserving Federated Learning Model for Electricity Theft Detection” 已被 IEEE Transactions on Emerging Topics in Computational Intelligence 接收。"
+    }
+  ],
   metrics: [
     { value: "50+", label: "学术论文" },
     { value: "24", label: "主持项目" },
