@@ -22,12 +22,6 @@ window.PROFILE = {
       title:
         "论文 “FedSTAFN: A Secure and Efficient Privacy-Preserving Federated Learning Model for Electricity Theft Detection” 已被 IEEE Transactions on Emerging Topics in Computational Intelligence 接收。" 
     },
-    {
-      period: "2026.09",
-      tags: ["IEEE TIP", "Accepted"],
-      title:
-        "论文 “FedSTAFN: A Secure and Efficient Privacy-Preserving Federated Learning Model for Electricity Theft Detection” 已被 IEEE Transactions on Emerging Topics in Computational Intelligence 接收。"
-    },
   {
       period: "2026.09",
       tags: ["IET Information Security", "Accepted"],
