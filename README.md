@@ -46,6 +46,23 @@ window.PROFILE = {
 }
 ```
 
+如果 `news` 数组里已经有一条内容，新增第二条时，两条之间必须加英文逗号：
+
+```js
+news: [
+  {
+    period: "2026.06",
+    tags: ["IEEE TETCI", "Accepted"],
+    title: "第一条新闻"
+  },
+  {
+    period: "2026.09",
+    tags: ["IEEE TIP", "Accepted"],
+    title: "第二条新闻"
+  }
+]
+```
+
 删除 News 时，删除对应的 `{ ... }` 对象即可。
 
 ## 添加论文
