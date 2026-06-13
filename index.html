@@ -15,128 +15,125 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="site-header" id="top">
-      <a class="brand" href="#top" aria-label="回到首页">Song Deng</a>
-      <nav class="main-nav" aria-label="主页导航">
-        <a href="#news">动态</a>
-        <a href="#about">简介</a>
-        <a href="#publications">论文</a>
-        <a href="#projects">项目</a>
-        <a href="#patents">专利</a>
-        <a href="#awards">荣誉</a>
-        <a href="#contact">联系</a>
-      </nav>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="site-name" href="#top">邓松 Song Deng</a>
+        <nav class="site-nav" aria-label="主页导航">
+          <a href="#biography">简介</a>
+          <a href="#news">动态</a>
+          <a href="#publications">论文</a>
+          <a href="#projects">项目</a>
+          <a href="#patents">专利</a>
+          <a href="#awards">荣誉</a>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="hero section-band">
-        <div class="hero-copy">
-          <div class="profile-photo-wrap">
-            <img class="profile-photo" src="./images/profile-photo.png" alt="邓松个人照片" />
+    <main class="page" id="top">
+      <aside class="profile-card" aria-label="个人信息">
+        <img class="portrait" src="./images/profile-photo.png" alt="邓松个人照片" />
+        <h1>邓松</h1>
+        <p class="english-name">Song Deng</p>
+        <p class="title">教授 · 工学博士 · 博士后 · 博导/硕导</p>
+        <p class="affiliation">南京邮电大学先进技术研究院</p>
+        <div class="quick-links" id="profile-links"></div>
+        <div class="contact-list" id="profile-facts"></div>
+      </aside>
+
+      <div class="content">
+        <section class="section" id="biography">
+          <div class="section-title">
+            <h2>Biography</h2>
+            <span>个人简介</span>
           </div>
-          <p class="eyebrow">南京邮电大学 · 先进技术研究院</p>
-          <h1>邓松 <span>Song Deng</span></h1>
-          <p class="hero-title">教授 · 工学博士 · 博士后 · 博导/硕导</p>
-          <p class="hero-summary" id="hero-summary"></p>
-          <div class="hero-actions" id="hero-actions"></div>
-        </div>
-        <div class="research-visual" aria-label="研究方向可视化">
-          <canvas id="research-canvas" width="760" height="620"></canvas>
-          <div class="visual-label">
-            <strong>Power Data Intelligence</strong>
-            <span>Security · Mining · Privacy · Cyber-Physical Systems</span>
+          <div class="prose" id="bio"></div>
+          <div class="metrics" id="metrics" aria-label="学术成果概览"></div>
+        </section>
+
+        <section class="section" id="research">
+          <div class="section-title">
+            <h2>Research Interests</h2>
+            <span>研究方向</span>
           </div>
-        </div>
-      </section>
+          <div class="research-tags" id="research-tags"></div>
+        </section>
 
-      <section class="metrics" id="metrics" aria-label="学术成果概览"></section>
-
-      <section class="section-band compact" id="news">
-        <div class="section-heading">
-          <p class="eyebrow">News</p>
-          <h2>最新动态</h2>
-        </div>
-        <div class="item-list" id="news-list"></div>
-      </section>
-
-      <section class="content-grid section-band" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">Biography</p>
-          <h2>个人简介</h2>
-        </div>
-        <div class="prose" id="bio"></div>
-        <aside class="side-panel" id="profile-facts"></aside>
-      </section>
-
-      <section class="section-band compact" id="experience">
-        <div class="section-heading">
-          <p class="eyebrow">Experience</p>
-          <h2>工作经历</h2>
-        </div>
-        <div class="timeline" id="experience-list"></div>
-      </section>
-
-      <section class="section-band compact" id="services">
-        <div class="section-heading">
-          <p class="eyebrow">Academic Service</p>
-          <h2>学术服务</h2>
-        </div>
-        <div class="service-grid" id="service-list"></div>
-      </section>
-
-      <section class="section-band compact" id="publications">
-        <div class="section-heading with-tools">
-          <div>
-            <p class="eyebrow">Publications</p>
-            <h2>代表性论文</h2>
+        <section class="section" id="news">
+          <div class="section-title">
+            <h2>News</h2>
+            <span>最新动态</span>
           </div>
-          <div class="toolbar" aria-label="论文筛选">
-            <input id="publication-search" type="search" placeholder="搜索论文、期刊或年份" />
-            <div class="segment" id="year-filters"></div>
+          <div class="news-list" id="news-list"></div>
+        </section>
+
+        <section class="section" id="experience">
+          <div class="section-title">
+            <h2>Experience</h2>
+            <span>工作经历</span>
           </div>
-        </div>
-        <div class="item-list" id="publication-list"></div>
-      </section>
+          <div class="timeline" id="experience-list"></div>
+        </section>
 
-      <section class="section-band compact" id="projects">
-        <div class="section-heading">
-          <p class="eyebrow">Research Projects</p>
-          <h2>科研项目</h2>
-        </div>
-        <div class="item-list two-column" id="project-list"></div>
-      </section>
+        <section class="section" id="publications">
+          <div class="section-title with-tools">
+            <div>
+              <h2>Selected Publications</h2>
+              <span>代表性论文</span>
+            </div>
+            <div class="publication-tools">
+              <input id="publication-search" type="search" placeholder="搜索论文、期刊或年份" />
+              <div class="year-filters" id="year-filters"></div>
+            </div>
+          </div>
+          <ol class="publication-list" id="publication-list"></ol>
+        </section>
 
-      <section class="section-band compact" id="patents">
-        <div class="section-heading">
-          <p class="eyebrow">Patents</p>
-          <h2>发明专利</h2>
-        </div>
-        <div class="item-list two-column" id="patent-list"></div>
-      </section>
+        <section class="section" id="projects">
+          <div class="section-title">
+            <h2>Research Projects</h2>
+            <span>科研项目</span>
+          </div>
+          <div class="compact-list" id="project-list"></div>
+        </section>
 
-      <section class="content-grid section-band" id="awards">
-        <div class="section-heading">
-          <p class="eyebrow">Honors & Standards</p>
-          <h2>获奖与标准</h2>
-        </div>
-        <div>
-          <h3>获奖</h3>
-          <div class="item-list" id="award-list"></div>
-        </div>
-        <aside>
-          <h3>标准</h3>
-          <div class="item-list" id="standard-list"></div>
-        </aside>
-      </section>
+        <section class="section" id="patents">
+          <div class="section-title">
+            <h2>Patents</h2>
+            <span>发明专利</span>
+          </div>
+          <div class="compact-list" id="patent-list"></div>
+        </section>
+
+        <section class="section" id="services">
+          <div class="section-title">
+            <h2>Academic Service</h2>
+            <span>学术服务</span>
+          </div>
+          <div class="service-list" id="service-list"></div>
+        </section>
+
+        <section class="section" id="awards">
+          <div class="section-title">
+            <h2>Awards & Standards</h2>
+            <span>获奖与标准</span>
+          </div>
+          <div class="split-list">
+            <div>
+              <h3>获奖</h3>
+              <div class="compact-list" id="award-list"></div>
+            </div>
+            <div>
+              <h3>标准</h3>
+              <div class="compact-list" id="standard-list"></div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
-    <footer class="site-footer" id="contact">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h2>邓松 Song Deng</h2>
-        <p id="contact-line"></p>
-      </div>
-      <a class="back-top" href="#top" aria-label="回到顶部">↑</a>
+    <footer class="footer">
+      <span id="contact-line"></span>
+      <a href="#top">Back to top</a>
     </footer>
 
     <script src="./data/profile.js"></script>
